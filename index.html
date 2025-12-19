@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandendepot - Kwaliteit & Betaalbare Banden</title>
+    <link rel="icon" type="image/png" href="images/bdepot2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- EmailJS voor e-mail notificaties (alternatief voor PHP) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="images/bdepot2.png" alt="Bandendepot Logo" class="logo">
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu-overlay"></div>
+            <nav class="main-nav">
+                <a href="assortiment.html" class="nav-link">ASSORTIMENT</a>
+                <a href="montage.html" class="nav-link">MONTAGE & SERVICE</a>
+                <a href="over-ons.html" class="nav-link">OVER ONS</a>
+                <a href="#offerte-form" class="mobile-cta">OFFERTE AANVRAGEN</a>
+            </nav>
+            <a href="#offerte-form" class="header-cta" style="text-decoration: none; display: inline-block;">OFFERTE AANVRAGEN</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-card">
+                <!-- Linkerhelft - Geel -->
+                <div class="hero-left yellow-section">
+                    <div class="yellow-content">
+                        <p class="section-label">ONLINE WARENHUIS IN BANDEN</p>
+                        <h1 class="main-heading">
+                            KWALITEIT &<br>
+                            BETAALBARE<br>
+                            BANDEN<br>
+                            VOOR IEDERE RIT
+                        </h1>
+                        <p class="description-text">
+                            Bandendepot is uw online warenhuis voor kwaliteitsbanden tegen scherpe prijzen. 
+                            Wij bieden een uitgebreid assortiment banden voor alle type voertuigen, van 
+                            personenauto's tot bedrijfswagens. Met snelle levering door heel Nederland en 
+                            België en betrouwbare service staat u er nooit alleen voor. Ontdek ons ruime 
+                            aanbod en vind de perfecte banden voor uw voertuig.
+                        </p>
+                        <a href="assortiment.html" class="cta-button yellow-button" style="text-decoration: none; display: inline-block; text-align: center;">BEKIJK ASSORTIMENT</a>
+                        <p class="contact-info">
+                            LIEVER DIRECT ADVIES?  BEL <a href="tel:0850601224" class="phone-link">085-0601224</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Rechterhelft - Blauw -->
+                <div class="hero-right blue-section">
+                    <div class="blue-content">
+                        <h2 class="form-title">VRAAG EEN VRIJBLIJVENDE OFFERTE AAN</h2>
+                        <p class="form-subtitle">
+                            Vul het formulier in en ontvang binnen 24 uur een op maat gemaakte offerte.
+                        </p>
+                        <form id="offerte-form" class="offerte-form">
+                            <div class="form-group">
+                                <input type="text" id="naam" name="naam" placeholder="Naam" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="telefoon" name="telefoon" placeholder="Telefoon" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="kenteken" name="kenteken" placeholder="Kenteken (bijv. 12ABC3)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="automerk" name="automerk" placeholder="Automerk" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="bandenmaat" name="bandenmaat" placeholder="Bandenmaat (bijv. 205/55 R16)" required>
+                            </div>
+                            <button type="submit" class="cta-button blue-button">OFFERTE AANVRAGEN</button>
+                            <p class="privacy-text">
+                                Door dit formulier in te vullen, gaat u akkoord met ons privacybeleid. 
+                                Uw gegevens worden veilig opgeslagen en alleen gebruikt voor het opstellen van uw offerte.
+                            </p>
+                            <ul class="benefits-list">
+                                <li>Levering door heel Nederland & België</li>
+                                <li>100+ tevreden klanten per maand</li>
+                                <li>Gratis advies van onze specialisten</li>
+                            </ul>
+                        </form>
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+                </div>
+
+                <!-- Autoband in het midden -->
+                <div class="tire-container">
+                    <img src="images/Tire.png" alt="Autoband" class="tire-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">© 2025 Bandendepot, Alle rechten voorbehouden.</p>
+            <div class="footer-links">
+                <a href="kvk.html" class="footer-link">KvK / BTW gegevens</a>
+                <a href="privacy.html" class="footer-link">Privacy & cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <p class="cookie-text">
+                Deze website gebruikt cookies om de gebruikerservaring te verbeteren. 
+                Door verder te gaan, gaat u akkoord met ons gebruik van cookies.
+            </p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="cookie-btn">Accepteren</button>
+                <a href="privacy.html" class="cookie-link">Meer informatie</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
