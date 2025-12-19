@@ -61,9 +61,9 @@ body {
 
 .logo {
     height: auto;
-    width: 200px;
+    width: 300px;
     max-height: 80px;
-    max-width: 200px;
+    max-width: 300px;
     display: block;
     object-fit: contain;
 }
@@ -953,9 +953,10 @@ body {
     }
 
     .logo {
-        height: 40px !important;
-        width: auto !important;
-        max-width: 200px !important;
+        height: auto !important;
+        width: 300px !important;
+        max-height: 80px !important;
+        max-width: 300px !important;
         object-fit: contain !important;
         display: block !important;
         visibility: visible !important;
