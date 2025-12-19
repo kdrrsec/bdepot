@@ -807,7 +807,7 @@ function triggerNewOfferteNotification(offerteData) {
     if ('Notification' in window && Notification.permission === 'granted') {
         new Notification('Nieuwe Offerte Aanvraag', {
             body: `Nieuwe offerte van ${offerteData.naam} (${offerteData.kenteken})`,
-            icon: '/images/bdepot2.png',
+            icon: 'images/bdepot2.png',
             tag: 'new-offerte',
             requireInteraction: false
         });
@@ -817,7 +817,7 @@ function triggerNewOfferteNotification(offerteData) {
             if (permission === 'granted') {
                 new Notification('Nieuwe Offerte Aanvraag', {
                     body: `Nieuwe offerte van ${offerteData.naam} (${offerteData.kenteken})`,
-                    icon: '/images/bdepot2.png',
+                    icon: 'images/bdepot2.png',
                     tag: 'new-offerte'
                 });
             }
